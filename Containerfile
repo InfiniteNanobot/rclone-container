@@ -1,4 +1,4 @@
-FROM almalinux/10-minimal
+FROM almalinux:10.2-minimal
 
 RUN microdnf install -y bash curl unzip ca-certificates fuse openssh-clients \
     && curl -fsSL https://rclone.org/install.sh | bash \
